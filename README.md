@@ -48,7 +48,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import nanminabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-ndarray-nanminabs@deno/mod.js';
+import nanminabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-ndarray-nanminabs@v0.1.0-deno/mod.js';
 ```
 
 #### nanminabs( arrays )
@@ -95,7 +95,7 @@ import filledarrayBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled-by
 import bernoulli from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-bernoulli@deno/mod.js';
 import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-ctor@deno/mod.js';
 import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@deno/mod.js';
-import nanminabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-ndarray-nanminabs@deno/mod.js';
+import nanminabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-ndarray-nanminabs@v0.1.0-deno/mod.js';
 
 function rand() {
     if ( bernoulli( 0.8 ) < 1 ) {
