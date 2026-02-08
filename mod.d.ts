@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2025 The Stdlib Authors.
@@ -16,16 +16,20 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
+
+import { ndarray } from '@stdlib/types/ndarray';
 
 /**
-* Compute the minimum absolute value of a one-dimensional ndarray, ignoring `NaN` values.
+* Computes the minimum absolute value of a one-dimensional ndarray, ignoring `NaN` values.
 *
-* @module @stdlib/stats-base-ndarray-nanminabs
+* @param arrays - array-like object containing an input ndarray
+* @returns minimum absolute value
 *
 * @example
 * var ndarray = require( '@stdlib/ndarray-base-ctor' );
-* var nanminabs = require( '@stdlib/stats-base-ndarray-nanminabs' );
 *
 * var xbuf = [ 1.0, -2.0, NaN, 2.0 ];
 * var x = new ndarray( 'generic', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
@@ -33,12 +37,9 @@
 * var v = nanminabs( [ x ] );
 * // returns 1.0
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function nanminabs<T extends ndarray = ndarray>( arrays: [ T ] ): number;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = nanminabs;
